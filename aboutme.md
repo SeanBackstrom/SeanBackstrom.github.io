@@ -16,5 +16,5 @@ Current student studying to become a Data Scientist with a focus on Data Enginee
   I was the the guy at the back of the stage behind a soundboard, and the dude hunched in front of a computer in the studio. When the sessions were over and the concerts dispersed, the artists went to party and I went home to code video games, read history books, and plan my next D&D session.
 
 Music is fun, and so is art, but deep in me is a passion to create and participate in valuable work that can impact the real world. 
-**In 2019, it was time for me to pivot,** and entering the world of data science is the perfect application for my love of mathematics, and my ingrained creativity.
+**In 2019 it was time for me to pivot,** and entering the world of data science is the perfect application for my love of mathematics, and my ingrained creativity.
 
