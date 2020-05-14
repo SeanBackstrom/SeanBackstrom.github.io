@@ -6,9 +6,12 @@ subtitle: From Art and Rap to Data and Math
 
 Huh, how did I get here?
 
-When I graduated high school I had the opportunity to move to Portland OR to become a fulltime professional music producer.
+Since 2015 I have been here and there across the U.S. as a full time professional music producer. It has been a crazy ride full of zany characters and unforgettable moments in front of studio microphones and concert crowds. 
 
-What else do you need?
+So why data science?
+
+Believe it or not it isn't that much of a jump for me. As the role of the 'producer' in the various musical settings, what I did best was all the "that's too technical for  me" tasks of the music creating process. From setting up complex studio and live audio gear through complex routing and electronic systems for big concerts and important recording sessions, to using extremely technical software and audio manipulation techniques to take care of the tasks most artists would rather pay the nerds like me to take care of. When the sessions were over and the concerts dispersed, the artists went to party and I went home to code video games and listen to history books.
+
 
 ### my history
 
