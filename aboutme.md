@@ -4,13 +4,15 @@ title: About me
 subtitle: From Art and Rap to Data and Math
 ---
 
-Huh, how did I get here?
+###Huh, how did I get here?
 
 Since 2015 I have been here and there across the U.S. as a full time professional music producer. It has been a crazy ride full of zany characters and unforgettable moments in front of studio microphones and concert crowds. 
 
-So why data science?
+###So why data science?
 
-Believe it or not it isn't that much of a jump for me. As the role of the 'producer' in the various musical settings, what I did best was all the "that's too technical for  me" tasks of the music creating process. From setting up complex studio and live audio gear through complex routing and electronic systems for big concerts and important recording sessions, to using extremely technical software and audio manipulation techniques to take care of the tasks most artists would rather pay the nerds like me to take care of. When the sessions were over and the concerts dispersed, the artists went to party and I went home to code video games and listen to history books.
+Believe it or not, it isn't much of a jump for me. As the role of the 'producer' in the various musical settings I found myself in, what I did best was all the "that's too technical for  me" tasks of the music creating process. I have been the go-to guy for artists and record label managers as a sort of do-it-all guy for all the nerdy tasks an artist would rather hand off in exchange for a guitar. From setting up complex studio and live audio gear through complex routing and electronic systems for big concerts and important recording sessions, to using extremely technical software and audio manipulation techniques to take care of the tasks most artists would rather pay the nerds like me to take care of. When the sessions were over and the concerts dispersed, the artists went to party and I went home to code video games, listen to history books, and plan my next D&D session.
+
+Music is fun, and so is art, but deep in me is a passion to create real-world and valuable software that can 
 
 
 ### my history
