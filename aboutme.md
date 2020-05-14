@@ -4,7 +4,7 @@ title: About me
 subtitle: From Art and Rap to Data and Math
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Huh, how did I get here?
 
 - I rock a great mustache
 - I'm extremely loyal to my family
