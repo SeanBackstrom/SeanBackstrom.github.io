@@ -3,7 +3,7 @@ layout: page
 title: About me
 subtitle: From Art and Rap to Data and Math
 ---
-I am a current student studying to become a Data Scientist with a focus on Data Engineering. I like to make things work fast and reliably. I am trained in analysis and modeling, and mechanics. **Basically, I like to transform good ideas into machinery of the future.** 
+I am a current student studying to become a Data Scientist with a focus on Data Engineering. I like to make complex virtual and real things work fast and reliably. I am trained in analysis and modeling, and machine learning. **Basically, I like to transform good ideas into machinery and software of the future.** 
   
 ## My history
  
