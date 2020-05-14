@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: From art & rap to data & math
+subtitle: From Art and Rap to Data and Math
 ---
 
 My name is Inigo Montoya. I have the following qualities:
