@@ -6,8 +6,7 @@ subtitle: From Art and Rap to Data and Math
 
 Huh, how did I get here?
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+When I graduated high school I had the opportunity to move to Portland OR to become a fulltime professional music producer.
 
 What else do you need?
 
