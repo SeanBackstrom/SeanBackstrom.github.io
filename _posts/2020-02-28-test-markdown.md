@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data on the first 68 Roman Emperors and their many ways to die.
-subtitle: Explore the effect of roman emperors methods to power and its relation to their demises.
+subtitle: Explore the effect of Roman Emperors methods to power and its relation to their demises.
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
