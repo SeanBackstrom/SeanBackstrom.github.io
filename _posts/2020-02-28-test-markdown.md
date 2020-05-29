@@ -31,65 +31,19 @@ Is that true? Well yeah, on average. I categorized all the Emperors claim to pow
 
 ![Graph2](https://i.imgur.com/uVPjFzT.png)
 
-Here's a useless table:
+Hardly an illustrious job after all. 13 out of the 68 Emperors in the data didn't even live as Emperor longer than 1 year! Most of those less than 5 months! It's hard not to see the Roman Emperors as the latest man standing bloody on top of the mountain of bodies, naively thinking his time on top will be different.
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+Ok now, just one more graph.
 
+As I've shown, **when you take the throne with violence, your lifespan has become significantly shorter than those with the legal right to the throne.**, or put differently, you aren't that clever for thinking "huh, I could just walk right in with my army!". The previous graph makes it clear that those who take the throne with illegal precendent live less lengthy lives, but I'd like you to see it overlayed on the first graph so you can see it in the grand perspective.
 
-How about a yummy crepe?
+![Graph3](https://i.imgur.com/WSsSMG5.png)
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+The moral of the story is, **Roman Emperors generally live much longer when they obtain power without threat of violence, or direct violence.** Or put succinctly, be nice, you'll live longer.
 
-It can also be centered!
-
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .mx-auto.d-block :}
-
-Here's a code chunk:
-
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
+### Source data and code
 
 {: .box-note}
-**Note:** This is a notification box.
+**Data Source** https://www.kaggle.com/lberder/roman-emperors-from-26-bc-to-395-ad
+**Personal Code Source https://colab.research.google.com/drive/1MXTzSzJiwqn4LHSoQmjmm4FZ97X3Gevp?usp=sharing
 
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
