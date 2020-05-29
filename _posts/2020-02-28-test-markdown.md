@@ -16,7 +16,7 @@ It's no secret that when Rome overwent the transition from a republic to a dicta
 
 After Augustus's death in 14 AD, the reigns to the biggest land owning empire in the world was passed around to whichever man showed up with the most grizzled men with swords to the capital, or to whoever could sneak the vial of mercury into the pudding, or even to whomever could pay the emperors personal guard enough money to trip onto the emperor with their sword out. Am I just being dramatic? Well yeah, but I got a graph too.
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+![Crepe](https://imgur.com/3PVB7tk)
 
 **Here is some bold text**
 
