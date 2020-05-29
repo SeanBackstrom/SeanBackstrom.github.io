@@ -47,5 +47,5 @@ The moral of the story is, **Roman Emperors generally live much longer when they
 **Data Source** https://www.kaggle.com/lberder/roman-emperors-from-26-bc-to-395-ad
 
 {: .box-note}
-**Personal Code Source** https://colab.research.google.com/drive/1MXTzSzJiwqn4LHSoQmjmm4FZ97X3Gevp?usp=sharing
+**Personal Code Source** https://github.com/SeanBackstrom/Unit-1-Build-Roman-Emperor/blob/master/UNIT_1_BUILD_romanemperors.ipynb
 
