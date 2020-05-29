@@ -23,9 +23,13 @@ comments: true
 ![Graph1](https://i.imgur.com/3PVB7tk.png)
 
 
-**Crazy right?** That means when you get the illustrious title of most powerful man in the world you have a whopping **69%** chance of dying a violent and early death. Roman Emperor Caracalla was stabbed to death while urinating on the side of the road in 217 AD. a Persian ruler poured molten gold down Roman Emperor Valerian's throat in 260 AD (They must've seen that episode too!). Emperor Commodus (Yes, the one in Gladiator) was actually strangled to death by his wrestling partner in 192 AD.
+**Crazy right?** That means when you get the illustrious title of most powerful man in the world you have a whopping **69%** chance of dying a violent and early death. Roman Emperor Caracalla was stabbed to death while urinating on the side of the road in 217 AD. a Persian ruler poured molten gold down Roman Emperor Valerian's throat in 260 AD (They must've seen that episode too!). Emperor Commodus (Yes, the one in Gladiator) was actually strangled to death by his wrestling partner in 192 AD. Ok, I'm distracted now, what am I getting at?
 
-## Here is a secondary heading
+## When you kill your way to the throne, you've got about 5 years to enjoy it.
+
+Is that true? Well yeah, on average. I categorized all the Emperors claim to power and averaged the length of reign they got to enjoy. Here's another graph.
+
+![Graph2](https://i.imgur.com/uVPjFzT.png)
 
 Here's a useless table:
 
