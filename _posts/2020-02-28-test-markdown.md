@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sample blog post
+title: Did Roman Emperors who took the throne with violence last as long as the peaceful ones?
 subtitle: Each post also has a subtitle
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
