@@ -35,7 +35,7 @@ Hardly an illustrious job after all. 13 out of the 68 Emperors in the data didn'
 
 Ok now, just one more graph.
 
-As I've shown, **when you take the throne with violence, your lifespan has become significantly shorter than those with the legal right to the throne.** Or put differently, you aren't that clever for thinking "huh, I could just walk right in with my army!". The previous graph makes it clear that those who take the throne with illegal precendent live less lengthy lives, but I'd like you to see it overlayed on the first graph so you can see it in the grand perspective.
+As I've shown, **when you take the throne with violence, your lifespan has become significantly shorter than those with the legal right to the throne.** Or put differently, you aren't that clever for thinking "huh, I could just walk right in with my army!" The previous graph makes it clear that those who take the throne with illegal precendent live less lengthy lives, but I'd like you to see it overlayed on the first graph so you can see it in the grand perspective.
 
 ![Graph3](https://i.imgur.com/WSsSMG5.png)
 
