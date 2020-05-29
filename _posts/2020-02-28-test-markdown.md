@@ -18,6 +18,8 @@ I will be exploring the data on the first 68 Roman emperors between 0-400 AD, th
 
 After Augustus's death in 14 AD, the reigns to the biggest land owning empire in the world was passed around to whichever man showed up with the most grizzled men with swords to the capital, or to whoever could sneak the vial of mercury into the pudding, or even to whomever could pay the emperors personal guard enough money to trip onto the emperor with their sword out. Am I just being dramatic? Well yeah, but I got a graph too.
 
+
+
 ![Crepe](https://i.imgur.com/3PVB7tk.png)
 
 **Here is some bold text**
