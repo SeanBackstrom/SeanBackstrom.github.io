@@ -8,11 +8,11 @@ tags: [test]
 comments: true
 ---
 
-  It's no secret that when Rome overwent the transition from a republic to a dictatorshi- *ahem* I mean empire; that things didn't go exactly seamless. Augustus, the first and probably best emperor of Rome, had himself a long 40 year reign with his loyal wife and best friend Agrippa, and died an old man. But as we will find out, that was just beginners luck.
+  It's no secret that when Rome overwent the transition from a republic to a dictatorshi- *ahem* I mean empire; that things didn't go exactly seamless. Augustus, the first and probably the best Emperor of Rome, had himself a long 40 year reign with his loyal wife and best friend Agrippa, and died an old man. But as we will find out, that was just beginners luck.
 
-  I will be exploring the data on the first 68 Roman emperors between 0-400 AD, the many methods they came about, and its relation to how they kicked the bucket.
+  I will be exploring the data on the first 68 Roman Emperors between 0-400 AD, the many methods they came about, and its relation to how they kicked the bucket.
 
-## How did a Roman emperor's method to obtaining power affect their lifespan as Emperor?
+## How did a Romans method to obtaining power affect their lifespan as Emperor?
 
 
 
