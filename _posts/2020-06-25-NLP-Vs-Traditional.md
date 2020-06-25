@@ -11,8 +11,8 @@ To introduce my little escapade, I'll be looking at a data set that looks at abo
 ## The Preliminaries
 
 I will be evaluating based on a recall score instead of accuracy score.([For info on difference between recall and accuracy](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c))  This is because **there is a massive imbalance between the amount of fraud postings and non-fraud postings.** There are 17014 non-fraud postings and only 866 fraud postings, which gives me a class imbalance of 95%. 
-![ImbalanceGraph](https://i.imgur.com/dyarNkU.png =100x20)
-<img src="https://i.imgur.com/dyarNkU.png" alt="drawing" width="300" height="400"/>
+
+<img src="https://i.imgur.com/B5Ga3GZ.png" alt="drawing" width="400" height="300"/>
 
 My target is not to have a 95% accurate model, it is to detect *fraud postings* with 70% recall, while maintaining above 95% recall on non fraud postings. 
 
