@@ -20,7 +20,7 @@ Is that goal too optimistic? Probably, but I'm bored so lets try it. I figured a
 
 My problem is a classification problem. Based on this data I need to create a binary classification model that can predict if a job posting is fraudulent (1) or not (0). As a baseline I will be considering the predicting power, in particular the **recall score** of traditional machine learning methods while NOT using any text processing other than ordinal encoding and other categorizing methods. Leakage is not an issue to consider with this data set (as long as I don't get carried away with some feature engineering) as no data other than the "is Fraudulent" column is a dead give away.
 
-**Welp, let's begin. Traditional Machine learning vs. Natural Lnaguage Processing**
+**Welp, let's begin. Traditional Machine learning vs. Natural Language Processing**
 
 # Traditional Machine Learning Algorithm
 ### Tldr; It lost...Bad
