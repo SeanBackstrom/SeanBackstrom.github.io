@@ -10,7 +10,7 @@ To introduce my little escapade, I'll be looking at a data set that looks at abo
 
 ## The Preliminaries
 
-Before I begin diving in I want to establish some evaluation metrics and baselines so you can follow exactly what I'm trying to do. I will be evaluating based on a recall score instead of accuracy score.([For info on difference between recall and accuracy](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c))  This is because **there is a massive imbalance between the amount of fraud postings and non-fraud postings.** There are 17014 non-fraud postings and only 866 fraud postings, which gives me a class imbalance of 95%. My target is not to have a 95% accurate model, it is to detect *fraud postings* with 75% accuracy.<img align="right" src="https://i.imgur.com/GD9YoOv.png">
+Before I begin diving in I want to establish some evaluation metrics and baselines so you can follow exactly what I'm trying to do. I will be evaluating based on a recall score instead of accuracy score.([For info on difference between recall and accuracy](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c))  This is because **there is a <img align="right" src="https://i.imgur.com/GD9YoOv.png">massive imbalance between the amount of fraud postings and non-fraud postings.** There are 17014 non-fraud postings and only 866 fraud postings, which gives me a class imbalance of 95%. My target is not to have a 95% accurate model, it is to detect *fraud postings* with 75% accuracy.
 
 
 ![ImbalanceGraph](https://i.imgur.com/GD9YoOv.png)
