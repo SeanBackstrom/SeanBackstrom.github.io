@@ -93,4 +93,4 @@ Oof. Quite a shy piece short of my 70% hoped accuracy, but **we got a nice basel
 
 # Natural Language Processing
 
-I don't want this to come across as an NLP tutorial so I'll skip most of the depth of converting the text into tokens and lemmatizing and such. ([Here's a great introduction anyways](https://towardsdatascience.com/machine-learning-text-processing-1d5a2d638958)) 
+I don't want this to come across as an NLP tutorial so I'll skip most of the depth of converting the text into tokens and lemmatizing and such. ([Here's a great introduction anyways](https://towardsdatascience.com/machine-learning-text-processing-1d5a2d638958)) The jist of what I did was to combine 
