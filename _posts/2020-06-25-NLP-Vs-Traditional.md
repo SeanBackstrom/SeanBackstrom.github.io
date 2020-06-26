@@ -22,10 +22,18 @@ My problem is a classification problem. Based on this data I need to create a bi
 
 **Welp, let's begin. Traditional Machine learning vs. Natural Language Processing**
 
+
 # Traditional Machine Learning Algorithm
+
 ### Tldr; It lost...Bad
 
-I want to really give the traditional machine learning algorithm a chance so I've done some feature engineering to give it some umpf. First, I noticed fraud postings tend to leave a lot of fields not filled out which puts them as NaN's in my dataset. Here you can compare shapes of how many NaN's are in typical Non Fraud - Fraud postings. 
+I want to really give the traditional machine learning algorithm a chance so I've done some feature engineering to give it some umpf. 
+
+First, I've deleted columns such as "Job Description", and "benefits" as they are handwritten style, and can not be categorized. I've kept lots of columns such as "Location" and "department" which are categorical and can be numericalized. 
+
+Second, I noticed fraud postings tend to leave a lot of fields not filled out which puts them as NaN's in my dataset. Here you can compare shapes of how many NaN's are in typical Non Fraud - Fraud postings. 
 
 <img src="https://i.imgur.com/Ra2Tvf3.png" alt="nancount graphs"/>
 *Bias alert* (ʘᗩʘ') : *The difference in the scale of Y between graphs can potentially explain the variance away.
+
+
