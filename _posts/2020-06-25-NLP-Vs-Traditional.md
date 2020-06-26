@@ -5,6 +5,11 @@ subtitle: Comparing Natural Language Processing Vs. Traditional Machine Learning
 cover-img: /assets/img/path.jpg
 tags: [NLP, Text Processing, Machine Learning]
 ---
+# Tired of these?
+
+<img src="https://i.imgur.com/g0zhpJe.png"/>
+
+Me too. So I've designed an algorithm that can be used to filter them out.
 
 To introduce my little escapade, I'll be looking at a data set that looks at about 18,000 job postings and tells you which ones are actually fraud postings. I will be creating a machine learning algorithm to be able to predict what postings are fraud. A link to this data set as well as my full Jupyter Notebook can be found at the bottom if you so wish to investigate my findings further.
 
@@ -144,12 +149,13 @@ Ta da!
 
 **Logistic Regression Recall: 0.762**
 
-What?! I actually did i- *I mean..* Ah, just as I expected.
+Now that is an improvement. Here is a confusion matrix with the results.
 
 0 = nonfraud and 1 = fraud
+
 <img src="https://i.imgur.com/EDW3IFt.png"/>
 
-If you aren't familiar with confusion matrix graphs like above. That is saying that 2710 nonfraud cases were correctly predicted, and 12 incorrect. and that 34 fraud jobs were incorrectly predicted and **105 jobs were correctly predicted as fraud.** That's a wrap boys, it worked like a charm. 
+If you aren't familiar with confusion matrix graphs like above, that is saying that 2710 nonfraud cases were correctly predicted, and 12 incorrect. and that 34 fraud jobs were incorrectly predicted and **105 jobs were correctly predicted as fraud.** That's a wrap boys, it worked like a charm. 
 
 Below I've got the most important words discovered to decide whether a job is fraud or not. The more red it is the more it contributes towards being fraudulent: 
 
@@ -166,5 +172,10 @@ As always, the moment of all truth; the final test results ran on my final test 
 
 **Logistic Regression Test Recall: 0.7225433526011561**
 
+I was able to succesfully achieve my goal of getting a recall greater than 70% for fraud posts, and had the bonus of getting around 99% accuracy with real postings. That's a wrap from me. Below you can check out my notebook and my source for the dataset.
 
+### Bonus: XGBoostClassifier results from NLP pipeline (beating baseline)
 
+**Logistic Regression Accuracy: 0.983**
+
+**Logistic Regression Recall: 0.762**
