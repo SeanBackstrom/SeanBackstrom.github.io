@@ -7,7 +7,7 @@ tags: [NLP, Text Processing, Machine Learning]
 ---
 # Tired of these?
 
-<img src="https://i.imgur.com/g0zhpJe.png"/>
+<img src="https://i.imgur.com/1Dclctx.png"/>
 
 Me too. So I've designed an algorithm that can be used to filter them out.
 
