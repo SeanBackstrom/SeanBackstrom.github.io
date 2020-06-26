@@ -15,7 +15,7 @@ To introduce my little escapade, I'll be looking at a data set that looks at abo
 
 ## The Preliminaries
 
-I will be evaluating based on a recall score instead of accuracy score.([For info on difference between recall and accuracy](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c))  This is because **there is a massive imbalance between the amount of fraud postings and non-fraud postings.** There are 17014 non-fraud postings and only 866 fraud postings, which gives me a class imbalance of 95%. 
+I will be evaluating based on a recall score instead of accuracy score. ([For info on difference between recall and accuracy](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c))  This is because **there is a massive imbalance between the amount of fraud postings and non-fraud postings.** There are 17014 non-fraud postings and only 866 fraud postings, which gives me a class imbalance of 95%. 
 
 <img src="https://i.imgur.com/g0zhpJe.png" alt="Imbalance graph" width="450" height="300"/>
 
@@ -176,6 +176,9 @@ I was able to succesfully achieve my goal of getting a recall greater than 70% f
 
 ### Bonus: XGBoostClassifier results from NLP pipeline (beating baseline)
 
-**Logistic Regression Accuracy: 0.983**
+**XGboost Classifier Accuracy: 0.9723872771758126**
+**XGboost Classifier Recall: 0.43884892086330934**
 
-**Logistic Regression Recall: 0.762**
+# Sources & Work
+
+Personal Notebook: 
