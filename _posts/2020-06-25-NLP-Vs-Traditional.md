@@ -36,5 +36,32 @@ Second, I noticed fraud postings tend to leave a lot of fields not filled out wh
 <img src="https://i.imgur.com/Ra2Tvf3.png" alt="nancount graphs"/>
 <p style="text-align: center;"><sub> Bias alert (ʘᗩʘ') : The difference in the scale of Y between graphs can potentially explain the variance away. </sub></p>
 
-Third, like this graph you can find lots of differences between fraud and non fraud job postings when you plot them out.
+Third, like this graph you can find lots of differences between fraud and non fraud job postings when you plot them out without having to do any language processing.
 <img src="https://i.imgur.com/zZ7kUWA.png" alt="Experience level graph"/>
+
+### Seems good! Let's try out a model.
+
+I'll be starting with a logistic regression model, and I'll be categorizing many of the text fields.
+```python
+lr = make_pipeline(
+    ce.OrdinalEncoder(),
+    SimpleImputer(), 
+    LogisticRegression(n_jobs=-1)
+)
+lr.fit(X_train, y_train)
+linpredicted = lr.predict(X_val)
+print("Logistic Regression Accuracy:", accuracy_score(y_val, linpredicted))
+print("Logistic Regression Recall:", recall_score(y_val, linpredicted))
+```
+*drum roll*
+
+**Logistic Regression Accuracy: 0.951**
+
+Wow it did great right?! Wait...
+
+**Logistic Regression Recall: 0.007**
+
+Ouch... That didn't work at all. As you can see it did almost a perfect job predicting nonfraud, and did just about a perfect job **not** predicting fraud.
+
+0 = nonfraud and 1 = fraud
+<img src="https://i.imgur.com/S2yFjkh.png"/>
