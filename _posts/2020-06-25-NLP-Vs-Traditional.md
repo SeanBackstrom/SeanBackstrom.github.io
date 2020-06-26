@@ -95,11 +95,11 @@ Oof. Quite a shy piece short of my 70% hoped accuracy, but **we got a nice basel
 
 I don't want this to come across as an NLP tutorial so I'll skip most of the depth of converting the text into tokens and lemmatizing and such. ([Here's a great introduction anyways](https://towardsdatascience.com/machine-learning-text-processing-1d5a2d638958)) 
 
-##Preparing the text
+## Preparing the text
 
 The jist of what I did was to combine all the text based columns such as job description, location, benefits, requirements, all into one column you might call my big wall of words. I then tokenize them, remove as much punctuation as I can, take out the stop words, Then finish with some lemmatizing. Finally as some seasoning out of the oven I lowercase them all and seperate neatly. Finally I taste test with my typical heavy slang test to make sure it's working nicely. Finally some chees- wait what was I saying? Im hungry...
 
-Result:
+## Result:
 
 ```python
 spacy_tokenizer("what? Hold on a second. I thought you were good bro..")
@@ -112,6 +112,34 @@ I want to get my head around what kind of word differences there are so I made a
 
 <img src="https://i.imgur.com/PachyD5.png"/>
 
-##The Final Countdown: Fitting the model
+As we can see, there is a lot of similiarities but we are seeing some different vocabulary which gives me hope in the mythical recall score >70%.
 
-To clarify again, This second test,, is literally just one column of an index, and one column of all the text put together. The taditional method above used over 15 columns to make its (trash quality) decision
+## The Final Countdown: Fitting the models
+
+To clarify again, This second test, using NLP, is literally just one column of an index, and one column of all the text put together. The taditional method above used over 15 columns to make its (trash quality) decision with all kinds of parameters. The final step before I began is to create a vectorizer using SKLearn's CountVectorizer that I can call upon in my new NLP pipeline.
+
+##Logistic Regression Model
+
+Let's fit this baby.
+
+```python
+# Create pipeline using Bag of Words
+pipe = Pipeline([("cleaner", predictors()),
+                 ('vectorizer', bow_vector),
+                 ('classifier', lrm)])
+
+# fitting our model.
+pipe.fit(X_train,y_train)
+
+linpredicted = pipe.predict(X_val)
+print("Logistic Regression Accuracy:", accuracy_score(y_val, linpredicted))
+print("Logistic Regression Recall:", recall_score(y_val, linpredicted))
+```
+
+**Ta da!**
+
+**Logistic Regression Accuracy: 0.983**
+
+**Logistic Regression Recall: 0.762**
+
+Now we are looking real nice!
