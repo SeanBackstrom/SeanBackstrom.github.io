@@ -37,6 +37,7 @@ Second, I noticed fraud postings tend to leave a lot of fields not filled out wh
 <p style="text-align: center;"><sub> Bias alert (ʘᗩʘ') : The difference in the scale of Y between graphs can potentially explain the variance away. </sub></p>
 
 Third, like this graph you can find lots of differences between fraud and non fraud job postings when you plot them out without having to do any language processing.
+
 <img src="https://i.imgur.com/zZ7kUWA.png" alt="Experience level graph"/>
 
 ### Seems good! Let's try out a model.
@@ -64,4 +65,18 @@ Wow it did great right?! Wait...
 Ouch... That didn't work at all. As you can see it did almost a perfect job predicting nonfraud, and did just about a perfect job **not** predicting fraud.
 
 0 = nonfraud and 1 = fraud
+
 <img src="https://i.imgur.com/S2yFjkh.png"/>
+
+### It's time for the big guns.
+
+We haven't evolved science in machine learning to stop at logistic regression, so I'm bringing out the big guns with XGBoost Classifier to hopefully beef up our recall score. After running it with the same parameters above the output is:
+**XGBoost Classifier Accuracy: 0.960
+XGBoost Classifier Recall: 0.237**
+
+and after testing with my final test set we get downgraded to:
+
+**XGBoost Classifier Accuracy: 0.957
+XGBoost Classifier Recall: 0.150**
+
+<img src="https://i.imgur.com/rLKgk62.png"/>
