@@ -1,7 +1,7 @@
 ---
 layout: post
-title: I Compare Natural Language Processing Vs. Traditional Machine Learning Models
-subtitle: Let's see if doing NLP is really neccessary when predicting fraud in job posts
+title: Too good to be true? I write an effective predictive model on whether a job posting is fake or real.
+subtitle: Comparing Natural Language Processing Vs. Traditional Machine Learning Models
 cover-img: /assets/img/path.jpg
 tags: [NLP, Text Processing, Machine Learning]
 ---
@@ -118,7 +118,9 @@ As we can see, there is a lot of similiarities but we are seeing some different 
 
 To clarify again, This second test, using NLP, is literally just one column of an index, and one column of all the text put together. The taditional method above used over 15 columns to make its (trash quality) decision with all kinds of parameters. The final step before I began is to create a vectorizer using SKLearn's CountVectorizer that I can call upon in my new NLP pipeline.
 
-##Logistic Regression Model
+If you are interested I try a few different model fits including XGBoost but to save you time I only posted the most succesful model I got which was a simple Logistic Regression below.
+
+## Logistic Regression Model
 
 Let's fit this baby.
 
@@ -136,10 +138,33 @@ print("Logistic Regression Accuracy:", accuracy_score(y_val, linpredicted))
 print("Logistic Regression Recall:", recall_score(y_val, linpredicted))
 ```
 
-**Ta da!**
+Ta da!
 
 **Logistic Regression Accuracy: 0.983**
 
 **Logistic Regression Recall: 0.762**
 
-Now we are looking real nice!
+What?! I actually did i- *I mean..* Ah, just as I expected.
+
+0 = nonfraud and 1 = fraud
+<img src="https://i.imgur.com/EDW3IFt.png"/>
+
+If you aren't familiar with confusion matrix graphs like above. That is saying that 2710 nonfraud cases were correctly predicted, and 12 incorrect. and that 34 fraud jobs were incorrectly predicted and **105 jobs were correctly predicted as fraud.** That's a wrap boys, it worked like a charm. 
+
+Below I've got the most important words discovered to decide whether a job is fraud or not. The more red it is the more it contributes towards being fraudulent: 
+
+<img src="https://i.imgur.com/aJPpNJR.png"/>
+
+
+While a lot of jibberish is in there forsure, it gives us some nice words to be careful of. (Look at #10 web devs!) 
+
+# Final Test Result
+
+As always, the moment of all truth; the final test results ran on my final test set:
+
+**Logistic Regression Test Accuracy: 0.9840604026845637**
+
+**Logistic Regression Test Recall: 0.7225433526011561**
+
+
+
