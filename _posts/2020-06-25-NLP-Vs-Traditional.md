@@ -68,7 +68,7 @@ Ouch... That didn't work at all. As you can see it did almost a perfect job pred
 
 0 = nonfraud and 1 = fraud
 
-<img src="https://i.imgur.com/S2yFjkh.png"/>
+<img src="https://i.imgur.com/S2yFjkh.png?1"/>
 
 ## It's time for the big guns.
 
@@ -86,7 +86,7 @@ and after testing with my final test set we get downgraded to:
 
 **XGBoost Classifier Recall: 0.150**
 
-<img src="https://i.imgur.com/rLKgk62.png"/>
+<img src="https://i.imgur.com/rLKgk62.png?1"/>
 
 Oof. Quite a shy piece short of my 70% hoped accuracy, but **we got a nice baseline to start with.** Now let's get to the big boy toys.
 
