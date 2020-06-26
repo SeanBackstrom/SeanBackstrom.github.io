@@ -40,7 +40,9 @@ Third, like this graph you can find lots of differences between fraud and non fr
 
 <img src="https://i.imgur.com/zZ7kUWA.png" alt="Experience level graph"/>
 
-### Seems good! Let's try out a model.
+## Seems good! Let's try out a model.
+
+### Logistic Regression
 
 I'll be starting with a logistic regression model, and I'll be categorizing many of the text fields.
 ```python
@@ -68,15 +70,27 @@ Ouch... That didn't work at all. As you can see it did almost a perfect job pred
 
 <img src="https://i.imgur.com/S2yFjkh.png"/>
 
-### It's time for the big guns.
+## It's time for the big guns.
+
+### XGBoost Classifier
 
 We haven't evolved science in machine learning to stop at logistic regression, so I'm bringing out the big guns with XGBoost Classifier to hopefully beef up our recall score. After running it with the same parameters above the output is:
-**XGBoost Classifier Accuracy: 0.960
-XGBoost Classifier Recall: 0.237**
+
+**XGBoost Classifier Accuracy: 0.960**
+
+**XGBoost Classifier Recall: 0.237**
 
 and after testing with my final test set we get downgraded to:
 
-**XGBoost Classifier Accuracy: 0.957
-XGBoost Classifier Recall: 0.150**
+**XGBoost Classifier Accuracy: 0.957**
+
+**XGBoost Classifier Recall: 0.150**
 
 <img src="https://i.imgur.com/rLKgk62.png"/>
+
+Oof. Quite a shy piece short of my 70% hoped accuracy, but **we got a nice baseline to start with.** Now let's get to the big boy toys.
+
+
+# Natural Language Processing
+
+I don't want this to come across as an NLP tutorial so I'll skip most of the depth of converting the text into tokens and lemmatizing and such. ([Here's a great introduction anyways](https://towardsdatascience.com/machine-learning-text-processing-1d5a2d638958)) 
