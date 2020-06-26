@@ -12,7 +12,7 @@ To introduce my little escapade, I'll be looking at a data set that looks at abo
 
 I will be evaluating based on a recall score instead of accuracy score.([For info on difference between recall and accuracy](https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c))  This is because **there is a massive imbalance between the amount of fraud postings and non-fraud postings.** There are 17014 non-fraud postings and only 866 fraud postings, which gives me a class imbalance of 95%. 
 
-<img src="https://i.imgur.com/B5Ga3GZ.png" alt="drawing" width="450" height="300"/>
+<img src="https://i.imgur.com/B5Ga3GZ.png" alt="Imbalance graph" width="450" height="300"/>
 
 My target is not to have a 95% accurate model, it is to detect *fraud postings* with 70% recall, while maintaining above 95% recall on non fraud postings. 
 
@@ -25,4 +25,6 @@ My problem is a classification problem. Based on this data I need to create a bi
 # Traditional Machine Learning Algorithm
 ### Tldr; It lost...Bad
 
-I want to really give the traditional machine learning algorithm a chance so I've done some feature engineering to give it some umpf.
+I want to really give the traditional machine learning algorithm a chance so I've done some feature engineering to give it some umpf. First, I noticed fraud postings tend to leave a lot of fields not filled out which puts them as NaN's in my dataset. Here you can compare shapes of how many NaN's are in typical Non Fraud - Fraud postings. 
+
+<img src="https://i.imgur.com/Ra2Tvf3.png" alt="nancount graphs"/>
