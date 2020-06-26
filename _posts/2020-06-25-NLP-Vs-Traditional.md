@@ -176,8 +176,9 @@ I was able to succesfully achieve my goal of getting a recall greater than 70% f
 
 ### Bonus: XGBoostClassifier results from NLP pipeline (beating baseline)
 
-**XGboost Classifier Accuracy: 0.9723872771758126**
-**XGboost Classifier Recall: 0.43884892086330934**
+XGboost Classifier Accuracy: 0.9723872771758126
+
+XGboost Classifier Recall: 0.43884892086330934
 
 # Sources & Work
 
