@@ -34,6 +34,6 @@ First, I've deleted columns such as "Job Description", and "benefits" as they ar
 Second, I noticed fraud postings tend to leave a lot of fields not filled out which puts them as NaN's in my dataset. Here you can compare shapes of how many NaN's are in typical Non Fraud - Fraud postings. 
 
 <img src="https://i.imgur.com/Ra2Tvf3.png" alt="nancount graphs"/>
-###### *Bias alert (ʘᗩʘ') : The difference in the scale of Y between graphs can potentially explain the variance away.
+###### Bias alert (ʘᗩʘ') : The difference in the scale of Y between graphs can potentially explain the variance away.
 
 
