@@ -181,6 +181,6 @@ I was able to succesfully achieve my goal of getting a recall greater than 70% f
 
 # Sources & Work
 
-Personal Notebook: https://github.com/SeanBackstrom/Unit2Build/blob/master/unit-2-build.ipynb
+[Personal Notebook](https://github.com/SeanBackstrom/Unit2Build/blob/master/unit-2-build.ipynb) 
 
-Source of dataset: https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction
+[Source of dataset](https://www.kaggle.com/shivamb/real-or-fake-fake-jobposting-prediction) 
