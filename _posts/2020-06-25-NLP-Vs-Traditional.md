@@ -27,7 +27,7 @@ My problem is a classification problem. Based on this data I need to create a bi
 
 ### Tldr; It lost...Bad
 
-I want to really give the traditional machine learning algorithm a chance so I've done some feature engineering to give it some umpf. 
+I want to really give the traditional machine learning algorithm a chance so I've found lots of features other than the job description to find giveaways of fraud postings. 
 
 First, I've deleted columns such as "Job Description", and "benefits" as they are handwritten style, and can not be categorized. I've kept lots of columns such as "Location" and "department" which are categorical and can be numericalized. 
 
@@ -36,4 +36,5 @@ Second, I noticed fraud postings tend to leave a lot of fields not filled out wh
 <img src="https://i.imgur.com/Ra2Tvf3.png" alt="nancount graphs"/>
 <p style="text-align: center;"><sub> Bias alert (ʘᗩʘ') : The difference in the scale of Y between graphs can potentially explain the variance away. </sub></p>
 
-
+Third, like this graph you can find lots of differences between fraud and non fraud job postings when you plot them out.
+<img src="https://i.imgur.com/zZ7kUWA.png" alt="Experience level graph"/>
