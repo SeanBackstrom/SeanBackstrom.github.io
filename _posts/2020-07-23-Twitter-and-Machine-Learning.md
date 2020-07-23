@@ -8,4 +8,4 @@ tags: [Machine Learning, Web Applications, PostgresSQL, SQL, Heroku, Flask, SQLA
 comments: true
 ---
 
-View my deployed app here: https://twitgit.herokuapp.com/
+View my deployed app here: [Twitgit!](https://twitgit.herokuapp.com/)
