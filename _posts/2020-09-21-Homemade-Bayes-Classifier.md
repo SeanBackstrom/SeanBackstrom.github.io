@@ -67,7 +67,7 @@ I've added a fit function which applies some of the functions to the data, and c
         
 furthermore, I need to now calculate probability for a class, not just an input number. each prediction should have a probability for all possible classes. for example a return might be (0.75, 0.20, 0.05) if there was 3 possible classes. According to Bayes Theorem, the probability that a piece of data belongs to a class is calculated as follows:
 
-P(class|data) = P(X|class) * P(class)
+`P(class|data) = P(X|class) * P(class)`
 
 The input variables are treated separately, giving the technique it’s name “naive“. For the above example where we have 2 input variables, the calculation of the probability that a row belongs to the first class 0 can be calculated as:
 
