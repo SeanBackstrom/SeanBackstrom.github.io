@@ -16,10 +16,7 @@ comments: true
   
   I created a Naive Bayes Classifier from scratch in Python using just base python, and a little numpy. I picked a Naive Bayes Classifier because I wanted to learn about Bayes theorem while also learning about algorithm creation too! No further adu, let's create.
   
-
-Steps:
-
-need to seperate data by class for training
+# Creating the Naive BClassifier
 
 Because this is a "class"ifier, first up is to make some functions to split up data by class and to make a simple function that returns a math summary of the dataset (returning the mean, std, and data length for example). I call it NaiveBackstromClassifier because hey, I made it! I can name it after myself.
 
