@@ -16,7 +16,7 @@ comments: true
   
   I created a Naive Bayes Classifier from scratch in Python using just base python, and a little numpy. I picked a Naive Bayes Classifier because I wanted to learn about Bayes theorem while also learning about algorithm creation too! No further adu, let's create.
   
-# Creating the Naive BClassifier
+# Creating the Naive Bayes Classifier
 
 Because this is a "class"ifier, first up is to make some functions to split up data by class and to make a simple function that returns a math summary of the dataset (returning the mean, std, and data length for example). I call it NaiveBackstromClassifier because hey, I made it! I can name it after myself.
 
@@ -44,7 +44,7 @@ Because this is a "class"ifier, first up is to make some functions to split up d
           return seperated
 
 
-Now I need to be able to calculate probability. I decided to use a gaussian probability density function which assumes x values are drawn from a distribution such as a bell curve. Any non-negative function which integrates to 1 (unit total area) is suitable for use as a probability density function. The most general Gaussian PDF formula is given here: https://ccrma.stanford.edu/~jos/sasp/Gaussian_Probability_Density_Function.html
+Now I need to be able to calculate probability. I decided to use a gaussian probability density function which assumes x values are drawn from a distribution such as a bell curve. Any non-negative function which integrates to 1 (unit total area) is suitable for use as a probability density function. The most general Gaussian PDF formula is given (here)[https://ccrma.stanford.edu/~jos/sasp/Gaussian_Probability_Density_Function.html]
 
       def calculate_probability(x, mean, std):
         '''calculates gaussian probability density using f(x) = (1 / sqrt(2 * PI) * sigma) * exp(-((x-mean)^2 / (2 * sigma^2)))
@@ -71,7 +71,7 @@ P(class|data) = P(X|class) * P(class)
 
 The input variables are treated separately, giving the technique it’s name “naive“. For the above example where we have 2 input variables, the calculation of the probability that a row belongs to the first class 0 can be calculated as:
 
-P(class=0|X1,X2) = P(X1|class=0) P(X2|class=0) P(class=0)
+`P(class=0|X1,X2) = P(X1|class=0) P(X2|class=0) P(class=0)`
 
 assuming this prints a most likely probability, this is a complete bayes algorithm. I coded the algorithm as follows:
 
