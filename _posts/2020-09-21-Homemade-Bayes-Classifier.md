@@ -21,29 +21,30 @@ Steps:
 
 need to seperate data by class for training
 
-Because this is a "class"ifier, first up is to make some functions to split up data by class and to make a simple function that returns a math summary of the dataset (returning the mean, std, and data length for example). I call it NaiveBackstromClassifier because hey, I made it! I can name it after myself (;
+Because this is a "class"ifier, first up is to make some functions to split up data by class and to make a simple function that returns a math summary of the dataset (returning the mean, std, and data length for example). I call it NaiveBackstromClassifier because hey, I made it! I can name it after myself.
+
     class NaiveBackstromClassifier():
     # Functions neccesary to streamline NBC
 
     
-    def summarize_dataset(dataset):
-        '''returns important math functions for data'''
+      def summarize_dataset(dataset):
+          '''returns important math functions for data'''
 
-        summaries = [(np.mean(column), np.std(column), len(column)) for column in zip(*dataset)]
-        del(summaries[-1])
-        return summaries
+          summaries = [(np.mean(column), np.std(column), len(column)) for column in zip(*dataset)]
+          del(summaries[-1])
+          return summaries
 
-    def seperate_by_class(dataset):
-        '''split data by class values, returns in dict. assumes last column in dataset is class value'''
+      def seperate_by_class(dataset):
+          '''split data by class values, returns in dict. assumes last column in dataset is class value'''
 
-        seperated = dict()
-        for i in range(len(dataset)):
-            vector = dataset[i]
-            class_value = vector[-1]
-            if (class_value not in seperated):
-                seperated[class_value] = list()
-            seperated[class_value].append(vector)
-        return seperated
+          seperated = dict()
+          for i in range(len(dataset)):
+              vector = dataset[i]
+              class_value = vector[-1]
+              if (class_value not in seperated):
+                  seperated[class_value] = list()
+              seperated[class_value].append(vector)
+          return seperated
 
 need access to std, mean, total data amounts a lot
 need to calculate probability. To follow NaiveBayes, use gaussian probability density
