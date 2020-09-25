@@ -43,14 +43,29 @@ Because this is a "class"ifier, first up is to make some functions to split up d
               seperated[class_value].append(vector)
           return seperated
 
-need access to std, mean, total data amounts a lot
-need to calculate probability. To follow NaiveBayes, use gaussian probability density
 
-assumes x values are drawn from a distribution such as a bell curve
-Any non-negative function which integrates to 1 (unit total area) is suitable for use as a probability density function. The most general Gaussian PDF is given by shifts of the normalized Gaussian: formula is here: https://ccrma.stanford.edu/~jos/sasp/Gaussian_Probability_Density_Function.html
-need to now calculate probability for a class, not just a input number. each prediction should have a probability for all possible classes. for example a return might be (0.75, 0.20, 0.05)
+Now I need to be able to calculate probability. I decided to use a gaussian probability density function which assumes x values are drawn from a distribution such as a bell curve. Any non-negative function which integrates to 1 (unit total area) is suitable for use as a probability density function. The most general Gaussian PDF formula is given here: https://ccrma.stanford.edu/~jos/sasp/Gaussian_Probability_Density_Function.html
 
-The probability that a piece of data belongs to a class is calculated as follows:
+      def calculate_probability(x, mean, std):
+        '''calculates gaussian probability density using f(x) = (1 / sqrt(2 * PI) * sigma) * exp(-((x-mean)^2 / (2 * sigma^2)))
+        returns the probability of x'''
+
+        exponent = exp(-((x-mean)**2 / (3 * std**2)))
+        return (1 / (sqrt(2 * pi) * std)) * exponent
+        
+I've added a fit function which applies some of the functions to the data, and can be used just as any other .fit method on a machine learning algorithm.
+
+    def fit(dataset):
+        '''splits dataset by class and calculates stats for each row'''
+
+        seperated = seperate_by_class(dataset)
+        summaries = dict()
+        for class_value, rows in seperated.items():
+            summaries[class_value] = summarize_dataset(rows)
+        return summaries
+        
+        
+furthermore, I need to now calculate probability for a class, not just an input number. each prediction should have a probability for all possible classes. for example a return might be (0.75, 0.20, 0.05) if there was 3 possible classes. According to Bayes Theorem, the probability that a piece of data belongs to a class is calculated as follows:
 
 P(class|data) = P(X|class) * P(class)
 
@@ -58,7 +73,98 @@ The input variables are treated separately, giving the technique it’s name “
 
 P(class=0|X1,X2) = P(X1|class=0) P(X2|class=0) P(class=0)
 
-assuming this prints a most likely probability, this is a complete bayes algorithm
+assuming this prints a most likely probability, this is a complete bayes algorithm. I coded the algorithm as follows:
 
-create predict function
-manages the calculation of the probabilities of a new row belonging to each class, and select the class with largest prob value
+    def calculate_class_probability(summaries, row):
+        '''calculate the probabilities of predicting each class for a given row. P(class=0|X1,X2) = P(X1|class=0) * P(X2|class=0) * P(class=0) for each class in the dataset. returns dict of probabilites with one entry for each class'''
+
+        #summaries 0,2 is length of data
+        total_rows = sum([summaries[label][0][2] for label in summaries])
+        probabilities = dict()
+        for class_value, class_summaries in summaries.items():
+            probabilities[class_value] = summaries[class_value][0][2]/float(total_rows)
+            for i in range(len(class_summaries)):
+                mean, std, _ = class_summaries[i]
+                probabilities[class_value] *= NaiveBackstromClassifier.calculate_probability(row[i], mean, std)
+        return probabilities
+
+
+
+Finally, I had to create a predict function that works like a typical machine learning predict method. My final Naive Backstrom Classifier looks like this!
+
+    class NaiveBackstromClassifier():
+    # Functions neccesary to streamline NBC
+
+    
+      def summarize_dataset(dataset):
+          '''returns important math functions for data'''
+
+          summaries = [(np.mean(column), np.std(column), len(column)) for column in zip(*dataset)]
+          del(summaries[-1])
+          return summaries
+
+      def seperate_by_class(dataset):
+          '''split data by class values, returns in dict. assumes last column in dataset is class value'''
+
+          seperated = dict()
+          for i in range(len(dataset)):
+              vector = dataset[i]
+              class_value = vector[-1]
+              if (class_value not in seperated):
+                  seperated[class_value] = list()
+              seperated[class_value].append(vector)
+          return seperated
+
+      def fit(dataset):
+          '''splits dataset by class and calculates stats for each row'''
+
+          seperated = seperate_by_class(dataset)
+          summaries = dict()
+          for class_value, rows in seperated.items():
+              summaries[class_value] = summarize_dataset(rows)
+          return summaries
+
+      def calculate_probability(x, mean, std):
+          '''calculates gaussian probability density using f(x) = (1 / sqrt(2 * PI) * sigma) * exp(-((x-mean)^2 / (2 * sigma^2)))
+          returns the probability of x'''
+
+          exponent = exp(-((x-mean)**2 / (3 * std**2)))
+          return (1 / (sqrt(2 * pi) * std)) * exponent
+
+      def calculate_class_probability(summaries, row):
+          '''calculate the probabilities of predicting each class for a given row. P(class=0|X1,X2) = P(X1|class=0) * P(X2|class=0) * P(class=0) for each class in the dataset. returns dict of probabilites with one entry for each class'''
+
+          #summaries 0,2 is length of data
+          total_rows = sum([summaries[label][0][2] for label in summaries])
+          probabilities = dict()
+          for class_value, class_summaries in summaries.items():
+              probabilities[class_value] = summaries[class_value][0][2]/float(total_rows)
+              for i in range(len(class_summaries)):
+                  mean, std, _ = class_summaries[i]
+                  probabilities[class_value] *= NaiveBackstromClassifier.calculate_probability(row[i], mean, std)
+          return probabilities
+
+      def predict(summaries, row):
+          '''predict the class for a given row'''
+          probabilities = NaiveBackstromClassifier.calculate_class_probability(summaries, row)
+          best_label, best_prob = None, -1
+          for class_value, probability in probabilities.items():
+              if best_label is None or probability > best_prob:
+                  best_prob = probability
+                  best_label = class_value
+          return best_label
+        
+In typical data scientist fashion, I decided to test it using the iris dataset. All I have to do is load it up and fit the model on it, and I should be able to predict a new row of data (that I will create on the spot) and the probability of what class it is in:
+
+    #df is iris.csv
+    model = NaiveBackstromClassifier.fit(df)
+    #fake data to predict class
+    row = [5.7,2.9,4.2,1.3]
+    label = NaiveBackstromClassifier.predict(model, row)
+    print('Data=%s, Predicted: %s' % (row, label))
+
+Output:
+
+    Data=[5.7, 2.9, 4.2, 1.3], Predicted: 2
+    
+Success! It predicted that it is in the second class, which is 'Iris-setosa'
