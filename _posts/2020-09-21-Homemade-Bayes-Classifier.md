@@ -22,8 +22,7 @@ Steps:
 need to seperate data by class for training
 
 Because this is a "class"ifier, first up is to make some functions to split up data by class and to make a simple function that returns a math summary of the dataset (returning the mean, std, and data length for example). I call it NaiveBackstromClassifier because hey, I made it! I can name it after myself (;
-'''python
-class NaiveBackstromClassifier():
+    class NaiveBackstromClassifier():
     # Functions neccesary to streamline NBC
 
     
